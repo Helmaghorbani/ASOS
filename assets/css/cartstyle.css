@@ -1,0 +1,226 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar .nav-link, .navbar-brand {
+    color: white;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ccc;
+  }
+
+  /***/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; 
+}
+
+
+table {
+    width: 60%;
+    max-width: 450px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+
+th {
+    background-color: #4a4a4a;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+}
+
+td.action-cell {
+    text-align: right;
+}
+
+
+#totalPrice {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.continue-button button {
+    color: white;
+    background-color: #42556b;
+    margin-top: 30px; 
+    padding: 12px 30px;
+}
+
+.continue-button button:hover {
+    background-color: #2d4c68;
+    transform: scale(1.05); 
+}
+
+.action-button button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+}
+
+
+table th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+  /**/
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  .footer-section {
+    flex: 1; 
+    max-width: 200px; 
+    margin: 10px; 
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-section a:hover {
+    color: #7d7d7d;
+  }
+  
+  .footer-bottom {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 100%; 
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .flags {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .flag {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  /*rs*/
+
+  @media (min-width: 1200px) {
+    .footer {
+      flex-direction: row; 
+    }
+  
+    .footer-section {
+      margin-right: 20px; 
+    }
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+      flex-direction: row;
+    }
+  
+    .footer-section {
+      margin-right: 15px; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      flex-direction: row; 
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-right: 10px; 
+      margin-bottom: 0; 
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start; 
+      padding: 10px;
+    }
+  
+    .footer-section {
+      margin-right: 0; 
+      margin-bottom: 10px;
+    }
+  }
+
+  /**/
